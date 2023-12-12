@@ -1,0 +1,7 @@
+print(1234)
+print('Pedro Silva')
+print("Pedro Silva")
+print('Pedro "Silva"')
+print(3,"Pedro 'Silva'")
+print("Pedro \"Silva")
+print(r"Pedro \"Silva\"")
