@@ -11,7 +11,7 @@ if nome != '' and idade != '':
     else:
         print('Seu nome não contém espaço')
     print(f'Seu nome contém {len(nome)} letras')
-    print(f'A primeira letra do seu nome é {nome[0:1]}')
+    print(f'A primeira letra do seu nome é {nome[0]}')
     print(f'A ultima letra do seu nome é {nome[-1]}')
 else:
     print('Desculpe, você deixou campos vazios')
