@@ -4,9 +4,9 @@ num = input('Digite um número inteiro: ')
 
 try:
     num_inteiro = int(num)
-    sobra_de_divisao = num_inteiro % 2
+    sobra_de_divisao = num_inteiro % 2 == 0
 
-    if sobra_de_divisao == 0:
+    if sobra_de_divisao:
         print('O número é par')
     else:
         print('O número é ímpar')
