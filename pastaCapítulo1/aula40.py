@@ -10,16 +10,16 @@ while True:
 
         if operador == '1':
             resultado = int_num1 + int_num2
-            print(resultado)
+            print(f'{num1} + {num2} = {resultado}')
         elif operador == '2':
             resultado = int_num1 - int_num2
-            print(resultado)
+            print(f'{num1} - {num2} = {resultado}')
         elif operador == '3':
             resultado = int_num1 * int_num2
-            print(resultado)
+            print(f'{num1} * {num2} = {resultado}')
         elif operador == '4':
             resultado = int_num1 / int_num2
-            print(resultado)
+            print(f'{num1} / {num2} = {resultado}')
         else:
             print('Digite o número equivalente a um operador válido')
 
@@ -29,30 +29,35 @@ while True:
             num3 = input('Digite o número que irá fazer a conta com o resultado: ')
             int_num3 = int(num3)
             operador = input('Qual conta você deseja realizar? adição[1] subtração [2] multiplicação[3] divisão[4]: ').strip()[0]
+            resultado2 = 0
 
             if operador == '1':
-                resultado += int_num3
-                print(resultado)
+                resultado2 = resultado + int_num3
+                print(f'{resultado} + {int_num3} = {resultado2}')
+                resultado = resultado2
             elif operador == '2':
-                resultado -= int_num3
-                print(resultado)
+                resultado2 = resultado - int_num3
+                print(f'{resultado} - {int_num3} = {resultado2}')
+                resultado = resultado2
             elif operador == '3':
-                resultado *= int_num3
-                print(resultado)
+                resultado2 = resultado * int_num3
+                print(f'{resultado} * {int_num3} = {resultado2}')
+                resultado = resultado2
             elif operador == '4':
-                resultado /= int_num3
-                print(resultado)
+                resultado2 = resultado / int_num3
+                print(f'{resultado} / {int_num3} = {resultado2}')
+                resultado = resultado2
             else:
                 print('Digite o número equivalente a um operador válido')
 
             continuar_ou_sair = input('Deseja continuar? Sim[s] ou Não[n]: ').lower().strip()[0]
-        reiniciar = input('Deseja reiniciar? Sim[s] ou Não[n]: ').lower().strip()[0]
+        reiniciar = input('Deseja reiniciar os números do 0? Sim[s] ou Não[n]: ').lower().strip()[0]
         if reiniciar == 'n':
             print('Obrigado por usar a calculadora!')
             break
     except:
         print('Um dos valores digitados não é um número')
-        reiniciar = input('Deseja reiniciar? Sim[s] ou Não[n]: ').lower().strip()[0]
+        reiniciar = input('Deseja reiniciar os números do 0? Sim[s] ou Não[n]: ').lower().strip()[0]
         if reiniciar == 'n':
             print('Obrigado por usar a calculadora!')
             break
