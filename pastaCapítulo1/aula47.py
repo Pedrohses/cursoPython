@@ -10,26 +10,20 @@ while True:
     posicao = 0
     tentativas += 1
 
-    while True:
-        try:
+    for letra in palavra:
             
-            if chute_user in palavra[posicao]:
-                senha_nova = list(senha)
-                senha_nova[posicao] = chute_user
-                senha = ''.join(senha_nova)
-                posicao += 1
-                
-            elif chute_user in palavra:
-                posicao += 1
-                pass
-            else:
-                posicao += 1
-                pass
-        except:
-            print(senha)
-                
-            if True:
-                break
+        if chute_user == letra:
+            senha_nova = list(senha)
+            senha_nova[posicao] = chute_user
+            senha = ''.join(senha_nova)
+            posicao += 1
+        elif chute_user in palavra:
+            posicao += 1
+            pass
+        else:
+            pass
+        
+    print(senha)       
 
     if senha == palavra:
         print('VOCÊ CONSEGUIU CHEGAR NA PALAVRA SECRETA, PARABÉNS!!!')
