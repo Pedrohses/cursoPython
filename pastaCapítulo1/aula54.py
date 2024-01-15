@@ -1,3 +1,4 @@
+#Usei apenas para limpar o terminal na hora de escrever a lista
 import os
 
 lista = []
@@ -7,6 +8,7 @@ def escrever_lista():
     for posicao in indices:
         print(posicao, lista[posicao])
 
+#Loop para a lista funcionar com os comandos desejados
 while True:
     try:
         opcao = input('Selecione uma opção \n'
