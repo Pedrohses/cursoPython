@@ -4,9 +4,9 @@ import os
 lista = []
 
 def escrever_lista():
-    indices = range(len(lista))
-    for posicao in indices:
-        print(posicao, lista[posicao])
+    lista_enumerada = enumerate(lista)
+    for indice, item in lista_enumerada:
+        print(indice,item)
 
 #Loop para a lista funcionar com os comandos desejados
 while True:
@@ -23,9 +23,7 @@ while True:
         
         elif opcao == 'l':
             os.system('cls')
-            lista_enumerada = enumerate(lista)
-            for indice, item in lista_enumerada:
-                print(indice,item)
+            escrever_lista()
             if len(lista) == 0:
                 print('Nada para listar')
 
