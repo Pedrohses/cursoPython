@@ -1,6 +1,7 @@
 lista = ['Maria', 'Helena', 'Pedro']
 lista.append('João')
 
+# O enumerate básicamente cria várias tuplas com o índice e o que está escrito
 lista_enumerada = list(enumerate(lista))
 
 # for item in lista_enumerada:
