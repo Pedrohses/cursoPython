@@ -23,7 +23,9 @@ while True:
         
         elif opcao == 'l':
             os.system('cls')
-            escrever_lista()
+            lista_enumerada = enumerate(lista)
+            for indice, item in lista_enumerada:
+                print(indice,item)
             if len(lista) == 0:
                 print('Nada para listar')
 
