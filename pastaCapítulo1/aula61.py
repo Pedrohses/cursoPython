@@ -6,7 +6,6 @@ REMOVEDOR_DE_CARACTERES = '.-'
 for i in range(0,len(REMOVEDOR_DE_CARACTERES)):
     cpf_usuário = cpf_usuário.replace(REMOVEDOR_DE_CARACTERES[i],'')
 
-# Separar os 9 primeiros dígitos do CPF
 nove_num_cpf = cpf_usuário[:9]
 
 # Cálculo do primeiro digito do CPF
