@@ -1,13 +1,23 @@
-cpf_usuário = '460.509.858-55'
+import re
+import sys
 
-REMOVEDOR_DE_CARACTERES = '.-'
 
-for i in range(0,len(REMOVEDOR_DE_CARACTERES)):
-    cpf_usuário = cpf_usuário.replace(REMOVEDOR_DE_CARACTERES[i],'')
+entrada = input('CPF [460.509.858-55]: ')
+# Remove os caracteres que não são um número
+cpf_usuário = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+    )
 
-nove_num_cpf = cpf_usuário[:9]
+entrada_e_sequencial = entrada == entrada[0]*len(entrada)
+
+if entrada_e_sequencial:
+    print('CPF inválido')
+    sys.exit()
 
 # Cálculo do primeiro digito do CPF
+nove_num_cpf = cpf_usuário[:9]
 regressiva1 = 10
 multiplic_digito1 = 0
 
