@@ -1,6 +1,5 @@
 cpf_usuário = '460.509.858-55'
 
-# Remove os caracteres que não são números da string CPF
 REMOVEDOR_DE_CARACTERES = '.-'
 
 for i in range(0,len(REMOVEDOR_DE_CARACTERES)):
