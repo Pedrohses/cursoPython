@@ -9,5 +9,7 @@ for i, frase in enumerate(lista_frases_cruas):
 
 # print(lista_frases_cruas)
 # print(lista_frases)
+
+# join consegue fazer uma string por uma lista usando a separação que eu quiser
 frases_unidas = '-'.join('abc')
 print(frases_unidas)
