@@ -20,3 +20,4 @@ salas = [
 # print(*string)
 
 print(*salas, end='\n')
+print(*salas, sep='\n')
