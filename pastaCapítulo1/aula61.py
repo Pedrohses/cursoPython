@@ -39,7 +39,8 @@ if segundo_digito_cpf > 9:
     segundo_digito_cpf = 0
 else:
     pass
-
+    
+# Verificando se o CPF é válido
 cpf_gerado_pelo_calculo = f'{nove_num_cpf}{primeiro_digito_cpf}{segundo_digito_cpf}'
 
 if cpf_usuário == cpf_gerado_pelo_calculo:
