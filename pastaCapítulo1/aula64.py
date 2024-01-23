@@ -38,7 +38,6 @@ for i in range(quantidade_cpf):
     else:
         pass
 
-    # Verificando se o CPF é válido
     cpf_gerado_pelo_calculo = f'{nove_num_cpf}{primeiro_digito_cpf}{segundo_digito_cpf}'
 
     print(cpf_gerado_pelo_calculo)
