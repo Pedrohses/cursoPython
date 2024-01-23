@@ -1,5 +1,4 @@
 import random
-import sys
 
 nove_num_cpf = ''
 
