@@ -1,4 +1,4 @@
-cpf_usuário = '460.509.868-55'
+cpf_usuário = '460.509.858-55'
 
 # Remove os caracteres que não são números da string CPF
 REMOVEDOR_DE_CARACTERES = '.-'
@@ -40,6 +40,7 @@ if segundo_digito_cpf > 9:
 else:
     pass
 
+# Verificando se o CPF é válido
 cpf_gerado_pelo_calculo = f'{nove_num_cpf}{primeiro_digito_cpf}{segundo_digito_cpf}'
 
 if cpf_usuário == cpf_gerado_pelo_calculo:
