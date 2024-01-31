@@ -1,0 +1,18 @@
+x = 1
+
+def escopo():
+    # global x <- manipular o x externo é uma má prática de programação pois deixa um código confuso
+    x = 10
+
+    def outra_funcao():
+        # global x
+        x = 11
+        y = 2
+        print(x, y)
+
+    outra_funcao()
+    print(x)
+
+print(x)
+escopo()
+print(x)
